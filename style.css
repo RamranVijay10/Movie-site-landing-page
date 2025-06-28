@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #444444;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.nav-logo img {
+  width: 65px;
+  height: 65px;
+
+  filter: drop-shadow(0px 1000px 0 red);
+  transform: translateY(-1000px);
+}
+
+.nav-logo span {
+  font-family: "Just Another Hand", cursive;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.nav-logo #dot {
+  color: #c40e61;
+}
+
+.nav-links ul {
+  display: flex;
+}
+
+.nav-links ul li {
+  margin-left: 30px;
+  line-height: 85px;
+  font-size: 23px;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-links ul li:first-child a {
+  color: #c40e61;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+header .header-text #btn i {
+  font-size: 21px;
+  color: #c40e61;
+}
+
+header .header-text #btn span {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25.5px;
+  color: #030303;
+}
+
+header .header-text h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 10px;
+  color: #030303;
+}
+
+header .header-text h1 span {
+  font-size: 100px;
+  line-height: 123px;
+
+  background: linear-gradient(to right, #2203ff, #c40d60);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+header .header-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #676767;
+}
+
+header .header-text #btn {
+  border: 1px solid #6a6a6a;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 30px;
+  display: block;
+  width: fit-content;
+}
+
+header .header-img {
+  position: relative;
+}
+header .header-img #card1 {
+  position: absolute;
+  right: 150px;
+  z-index: 100;
+  bottom: -100px;
+
+  width: 300px;
+  height: 500px;
+}
+
+header .header-img #card2 {
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: 300px;
+  height: 500px;
+}
+
+#trending {
+  margin-top: 200px;
+  height: 50px;
+  position: relative;
+}
+
+.trending-title .trend::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #2c29446e;
+  width: 830px;
+  height: 1px;
+  top: 25px;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#more {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  color: #030303;
+  position: absolute;
+  line-height: 47px;
+  right: 0;
+}
+
+#trending #fire {
+  width: 30px;
+  height: 30px;
+
+  filter: drop-shadow(0px 1000px 0 red);
+  transform: translateY(-1000px);
+}
+
+#trending h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 37px;
+  line-height: 45px;
+  color: #030303;
+  display: inline-block;
+  margin-bottom: 30px;
+  position: relative;
+  margin-right: 10px;
+}
+
+#trending .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#trending .cards .card {
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+#trending .cards .card .card-img img {
+  width: 178px;
+  height: 300px;
+}
+
+#trending .cards .card .card-text h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  color: #030303;
+}
+
+#trending .cards .card .card-text span {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #3b3b3b;
+  margin-right: 30px;
+}
+
+#trending .cards .card .card-text #dot {
+  color: #ff014c;
+  margin: 0;
+  font-size: 20px;
+}
